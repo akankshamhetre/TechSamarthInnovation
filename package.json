@@ -1,14 +1,13 @@
 {
-  "name": "my-new-react-app",
+  "name": "techsamarthinnovation",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://techsamarthinnovations.github.io/TechSamarthInnovation",
+  "homepage": "https://akankshamhetre.github.io/TechSamarthInnovation",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "file-saver": "^2.0.5",
-    "gh-pages": "^6.1.1",
     "html2canvas": "^1.4.1",
     "jszip": "^3.10.1",
     "md5": "^2.3.0",
@@ -44,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
