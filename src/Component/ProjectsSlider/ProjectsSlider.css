@@ -1,0 +1,44 @@
+/* src/Component/ProjectsSlider/ProjectsSlider.css */
+
+.projects-slider {
+    width: 100%; /* Reduce the width of the slider container */
+    overflow: hidden;
+    position: relative;
+   
+}
+
+.slider {
+    display: flex;
+    animation: slide 10s linear infinite; /* Adjust duration and timing function as needed */
+    gap: 0px; /* Add gap between images */
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px)); /* Adjust for gap */
+    }
+}
+
+.slider img {
+    width: calc((100% - 20px * 2) / 3); /* Adjust width of images and consider gap */
+    height: auto;
+    animation: forwards  ease-in-out infinite; /* Add blinkable animation */
+}
+
+@keyframes blink {
+    0%, 50%, 100% {
+        opacity: 1; /* Show image */
+    }
+    25%, 75% {
+        opacity: 0; /* Hide image */
+    }
+}
+
+
+.slider .slide {
+    flex: 0 0 auto; /* Prevent images from shrinking */
+}
+

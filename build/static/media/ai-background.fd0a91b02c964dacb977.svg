@@ -1,0 +1,24 @@
+ <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+      <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+      <animate attributeName="fx" values="50%;80%;50%" dur="10s" repeatCount="indefinite" />
+      <animate attributeName="fy" values="50%;20%;50%" dur="10s" repeatCount="indefinite" />
+    </radialGradient>
+    <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:rgb(255,255,255);stop-opacity:0" />
+      <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1" />
+      <animate attributeName="fx" values="50%;20%;50%" dur="15s" repeatCount="indefinite" />
+      <animate attributeName="fy" values="50%;80%;50%" dur="15s" repeatCount="indefinite" />
+    </radialGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad1)">
+    <animate attributeName="x" from="0" to="100" dur="10s" repeatCount="indefinite" />
+    <animate attributeName="y" from="0" to="100" dur="10s" repeatCount="indefinite" />
+  </rect>
+  <rect width="100%" height="100%" fill="url(#grad2)">
+    <animate attributeName="x" from="0" to="100" dur="15s" repeatCount="indefinite" />
+    <animate attributeName="y" from="0" to="100" dur="15s" repeatCount="indefinite" />
+  </rect>
+</svg>

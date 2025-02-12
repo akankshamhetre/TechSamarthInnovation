@@ -1,0 +1,127 @@
+/* src/Component/HappyCustomer/FeedbackForm.css */
+
+.feedback-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ff5733 0%, #ff704d 100%);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+.feedback-form-container::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.2) 55%, rgba(255, 255, 255, 0.1) 60%);
+    animation: wave 8s linear infinite;
+    transform: rotate(25deg);
+}
+
+@keyframes wave {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+.feedback-form-container h2 {
+    text-align: center;
+    font-family: 'Sedan SC', serif;
+    margin-bottom: 20px;
+    font-size: 2.2em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ff5733;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #ffd700;
+}
+
+.form-group input:focus ~ label,
+.form-group textarea:focus ~ label,
+.form-group input:not(:placeholder-shown) ~ label,
+.form-group textarea:not(:placeholder-shown) ~ label {
+    top: -20px;
+    left: 10px;
+    font-size: 0.8em;
+    color: #ffd700;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.form-group label {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffd700;
+    color: #3b034d;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #ffcc00;
+}
+
+.stars-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.stars {
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.star {
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.star:hover,
+.star.filled {
+    color: #ffd700; /* Change color to your theme color */
+    transition: color 0.3s ease;
+}

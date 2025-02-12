@@ -1,0 +1,37 @@
+/* src/Component/Hero/Hero.css */
+
+.hero {
+    position: relative;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../../Img/bg.png') no-repeat center center/cover;
+}
+
+.hero-title {
+    position: absolute;
+    color: #ff5733;
+    font-size: 48px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-caption {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fff;
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

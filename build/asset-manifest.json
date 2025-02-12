@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/TechSamarthInnovation/static/css/main.1b5eca6f.css",
+    "main.js": "/TechSamarthInnovation/static/js/main.a043f2da.js",
+    "static/js/453.6d16bec0.chunk.js": "/TechSamarthInnovation/static/js/453.6d16bec0.chunk.js",
+    "static/media/bg.png": "/TechSamarthInnovation/static/media/bg.1bff9086012e8620b5f5.png",
+    "static/media/shree.jpg": "/TechSamarthInnovation/static/media/shree.0c7710b6b0bde86e49d1.jpg",
+    "static/media/logo.png": "/TechSamarthInnovation/static/media/logo.de84bfc9e04d3907f739.png",
+    "static/media/WebsiteImg1.jpg": "/TechSamarthInnovation/static/media/WebsiteImg1.e4a95242ca18b32e612f.jpg",
+    "static/media/WebsiteImg3.jpg": "/TechSamarthInnovation/static/media/WebsiteImg3.ecce651c12a6d606873e.jpg",
+    "static/media/WebsiteImg2.jpg": "/TechSamarthInnovation/static/media/WebsiteImg2.6ea165227dcc0b25ad1a.jpg",
+    "static/media/akanksha.jpg": "/TechSamarthInnovation/static/media/akanksha.6cc73bbb18abd3ea4cbc.jpg",
+    "static/media/dinesh.jpeg": "/TechSamarthInnovation/static/media/dinesh.b299ff6fff530c1fc949.jpeg",
+    "static/media/ai-background.svg": "/TechSamarthInnovation/static/media/ai-background.fd0a91b02c964dacb977.svg",
+    "index.html": "/TechSamarthInnovation/index.html",
+    "main.1b5eca6f.css.map": "/TechSamarthInnovation/static/css/main.1b5eca6f.css.map",
+    "main.a043f2da.js.map": "/TechSamarthInnovation/static/js/main.a043f2da.js.map",
+    "453.6d16bec0.chunk.js.map": "/TechSamarthInnovation/static/js/453.6d16bec0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b5eca6f.css",
+    "static/js/main.a043f2da.js"
+  ]
+}

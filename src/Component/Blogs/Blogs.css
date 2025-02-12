@@ -1,0 +1,16 @@
+/* src/Component/Blogs/Blogs.css */
+
+.blogs-container {
+    text-align: center;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

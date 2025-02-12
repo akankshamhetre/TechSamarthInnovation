@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.footer {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(50, 50, 50, 0.8) 100%);
+    color: #fff;
+    text-align: left;
+    padding: 10px 20px;  /* Adjust padding */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 50px;
+}
+
+.social-media {
+    display: flex;
+    margin-right: 40px;
+}
+
+.social-icon {
+    margin-left: 20px;
+    transition: transform 0.3s, color 0.3s;
+    position: relative;
+    animation: zoomInOut 2s infinite;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    fill: #ffffff; /* Default icon color */
+}
+
+.social-icon:hover .icon {
+    fill: #00d4ff;  /* AI-inspired hover color */
+    transform: scale(1.2);
+}
+
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add padding to the main content to avoid overlap with the footer */
+body {
+    padding-bottom: 70px;  /* Same height as the footer */
+}

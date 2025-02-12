@@ -1,0 +1,69 @@
+/* ContactUs.css */
+.contact-info {
+    padding: 30px;
+    background: linear-gradient(135deg, #ff5733, #ff704d);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 0.5s forwards;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.icon {
+    font-size: 24px;
+    margin-right: 15px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.contact-item p:first-child {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-item p:last-child {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.contact-item a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #09f2fe;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

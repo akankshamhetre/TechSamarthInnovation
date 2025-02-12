@@ -1,0 +1,68 @@
+/* src/Component/Home/Home.css */
+
+.home-container {
+    text-align: center;
+}
+
+.intro {
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* src/Component/ProjectsSlider/ProjectsSlider.css */
+
+/* Define the pulsating animation */
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 87, 51, 0.7);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(255, 87, 51, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 87, 51, 0.7);
+    }
+}
+
+.explore-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ff5733, #ff704d);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: pulsate 2s infinite;
+}
+
+.explore-button:hover {
+    background: linear-gradient(135deg, #ff704d, #ff5733);
+    transform: scale(1.1);
+    box-shadow: 0 0 0 10px rgba(255, 87, 51, 0.3);
+}
+
+
+.horizontal-line {
+    width: 80%;
+    border: 1px solid #ff5733;
+    margin: 20px auto;
+    animation: blink 1s step-end infinite alternate;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
